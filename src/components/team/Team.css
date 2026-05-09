@@ -1,0 +1,43 @@
+.team {
+  padding: var(--main-p);
+}
+.team .container {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+@media (max-width: 992px) {
+  .team .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 601px) {
+  .team .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.team .container .card {
+    box-shadow: var(--main-shadow);
+}
+.team .container .card img {
+    width: 100%;
+    filter: grayscale(80%);
+}
+.team .container .card .card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.team .container .card .card-body button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.team .container .card .card-body button:hover {
+    background-color: #ccc;
+}

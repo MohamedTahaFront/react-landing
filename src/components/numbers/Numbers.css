@@ -1,0 +1,18 @@
+.numbers {
+  background-color: var(--bg-a);
+  color: #fff;
+  padding: var(--sec-p);
+}
+.numbers .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+@media (max-width: 601px) {
+  .numbers .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.numbers .container .box span {
+  display: block;
+}

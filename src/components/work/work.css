@@ -1,0 +1,73 @@
+.Work {
+  padding: var(--main-p);
+}
+.Work .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 64px;
+}
+@media (max-width: 992px) {
+  .Work .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 601px) {
+  .Work .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.Work .container .image .close {
+  display: none;
+}
+.Work .container .image:hover {
+  opacity: 0.6;
+}
+.Work .container .image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.Work .container .image.active {
+  position: fixed;
+  background: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  z-index: 10001;
+}
+.Work .container .image.active img {
+  width: 300px;
+  height: 200px;
+  animation: img 0.3s;
+}
+.Work .container .image.active .close {
+  display: block;
+  padding: 16px 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10002;
+  color: #fff;
+}
+.Work .container .image.active .close:hover {
+  background-color: #ccc;
+  color: #000;
+}
+@keyframes img {
+  0% {
+    width: 30px;
+    height: 20px;
+  }
+  100% {
+    width: 300px;
+    height: 200px;
+  }
+}

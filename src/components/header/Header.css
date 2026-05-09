@@ -1,0 +1,47 @@
+header {
+  min-height: calc((100vh - 52.5px));
+  background: url(../../assets/imgs/start.jpg) no-repeat center;
+  background-size: cover;
+  filter: grayscale(50%);
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+header .icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 24px 16px;
+}
+header .icons a {
+  transition: 0.3s;
+  color: #fff;
+  opacity: 0.5;
+}
+header .icons a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+header .box h1 {
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+header .box {
+  padding: 16px;
+}
+header .box button {
+  padding: 18px 24px;
+  background-color: #fff;
+  transition: 0.3s;
+  opacity: 0.6;
+  cursor: pointer;
+  margin-top: 25px;
+}
+header .box button:hover {
+  opacity: 1;
+  background-color: #ccc;
+}

@@ -1,0 +1,34 @@
+.about {
+  padding: var(--main-p);
+  background-color: var(--bg-white);
+}
+.about h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.about p {
+  text-align: center;
+}
+.about .container {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.about .container .box {
+  text-align: center;
+}
+.about .container .box svg {
+  width: 64px;
+  height: 64px;
+}
+@media (max-width: 992px) {
+  .about .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width:601px) {
+    .about .container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
